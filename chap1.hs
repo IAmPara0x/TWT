@@ -2,6 +2,7 @@
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
 {-# HLINT ignore "Redundant lambda" #-}
 {-# HLINT ignore "Use curry" #-}
+{-# HLINT ignore "Use uncurry" #-}
 
 data X = A | B
         deriving (Show)
