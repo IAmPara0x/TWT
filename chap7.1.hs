@@ -48,7 +48,7 @@ modifySTRef ref f = do
 runST :: (forall s. ST s a) -> a
 runST = unsafeRunST
 
-safeExample :: ST s String
+safeExample :: forall s. ST s String
 safeExample = do
   ref <- newSTRef "hello"
   modifySTRef ref (++ " world")
